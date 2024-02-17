@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    /* Reset CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .search-bar {
+      margin-bottom: 20px;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .product-info {
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-weight: bold;
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .quantity button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .add-to-cart {
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .add-to-cart:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="categories">
+        <button>All</button>
+        <button>Category 1</button>
+        <button>Category 2</button>
+        <button>Category 3</button>
+        <!-- Add more category buttons as needed -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="product-card">
+      <div class="product-info">
+        <img src="product1.jpg" alt="Product 1">
+        <h2>Product 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="product-price">$19.99</div>
+      <div class="quantity">
+        <button>-</button>
+        <input type="text" value="1">
+        <button>+</button>
+      </div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+
+    <!-- More product cards can be added here -->
+
+  </div>
+</body>
+</html>
